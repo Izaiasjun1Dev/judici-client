@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <DynamicLoginComponent/>
+      <DynamicRegisterComponent/>
     </ThemeProvider>
   )
 }

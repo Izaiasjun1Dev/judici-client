@@ -44,7 +44,13 @@ export default function Login() {
                     </Grid>
                     
                 </Grid>
-                <Typography variant='h1' sx={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#1E293B', paddingTop: "5rem" }}>
+                <Typography variant='h1' color={"#1E293B"} sx={{ fontSize: '2.5rem', font: {
+                    fontFamily: 'Sans-Serif Product Sans',
+                    fontWeight: 700,
+                    lineHeight: '3rem',
+                    letterSpacing: '0.1rem',
+                    
+                }, color: '#1E293B', paddingTop: "5rem" }}>
                     Bem-vindo(a) de volta!
                 </Typography>
                 <Typography variant='subtitle1' sx={{ fontSize: '1.5rem', color: '#1E293B' }}>
@@ -113,15 +119,15 @@ export default function Login() {
                 </Grid>
                 
                 <Grid container >
-                    <Grid item xs={12} sm={6}>
+                    
                         <Button
                             variant="contained"
                             fullWidth
-                            sx={{ backgroundColor: '#7C3AED', color: '#fff', fontWeight: 'bold', fontSize: '1rem', padding: '1rem 0' }}
+                            sx={{color: '#fff', fontWeight: 'bold', fontSize: '1rem', padding: '1rem 0' }}
                         >
                             Entrar
                         </Button>
-                    </Grid>
+                   
                 </Grid>
                 </Box>
             </Grid>
@@ -134,7 +140,13 @@ export default function Login() {
                         width: '100%',
                         height: '100vh',
                         objectFit: 'cover',
-                        display: { xs: 'none', sm: 'block' }, // Esconde a imagem em telas pequenas (xs)
+                        display: {
+                            xs: 'none',
+                            sm: 'none',
+                            md: 'flex',
+                            lg: 'flex',
+                            xl: 'flex',
+                        }, // Esconde a imagem em telas pequenas (xs)
                     }}
                 />
             </Grid>
